@@ -2,9 +2,11 @@ import streamlit as st
 import pandas as pd
 
 # Load Data
-batters = pd.read_csv("/content/drive/MyDrive/Cricket_AI_Project/IPL2025Batters.csv")
-bowlers = pd.read_csv("/content/drive/MyDrive/Cricket_AI_Project/IPL2025Bowlers.csv")
-auction = pd.read_csv("/content/drive/MyDrive/Cricket_AI_Project/auction.csv")
+batters = pd.read_csv("IPL2025Batters.csv")
+
+bowlers = pd.read_csv("IPL2025Bowlers.csv")
+
+auction = pd.read_csv("auction.csv")
 
 st.set_page_config(
     page_title="IPL AI Dashboard",
